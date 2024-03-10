@@ -10,8 +10,7 @@ def test_data_size():
     """
     Check that the data is sliced into a suitable size for testing.
     """
-    project_path = "/home/mlops/Deploying-a-Scalable-ML-Pipeline-with-FastAPI"
-    data_path = os.path.join(project_path, "data", "census.csv")
+    data_path = './data/census.csv'
     data = pd.read_csv(data_path)
     train, test = train_test_split(data, test_size = 0.2)
     assert len(test) >= 2000
@@ -23,8 +22,7 @@ def test_features():
     """
     Check that all features are present in the data.
     """
-    project_path = "/home/mlops/Deploying-a-Scalable-ML-Pipeline-with-FastAPI"
-    data_path = os.path.join(project_path, "data", "census.csv")
+    data_path = './data/census.csv'
     data = pd.read_csv(data_path)
 
     features = {
