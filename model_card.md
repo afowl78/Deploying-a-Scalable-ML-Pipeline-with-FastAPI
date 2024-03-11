@@ -16,5 +16,6 @@ Precision: 0.7310
 Recall: 0.6101
 F1: 0.6651
 ## Ethical Considerations
-
+This model should only be used for description purposes only. The model contains features such as sex, age, race etc. which should not be used when determining things such as credit worthiness or other similar uses.
 ## Caveats and Recommendations
+The model uses default parameters. For more accurate metrics hyperparameters can be used.
